@@ -1,0 +1,77 @@
+footer {
+  section:not(.copy-right) {
+    padding: 2rem 0;
+  }
+
+  section:nth-child(odd) {
+    background-color: $black;
+  }
+
+  section:nth-child(even) {
+    background-color: rgba($black, 0.8);
+  }
+
+  .social-media {
+    a {
+      display: inline-block;
+
+      i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+
+        &:hover {
+          color: $orange;
+          transform: translateY(-15%) scale(1.1);
+          -webkit-transform: translateY(-15%) scale(1.1);
+          -moz-transform: translateY(-15%) scale(1.1);
+          -ms-transform: translateY(-15%) scale(1.1);
+          -o-transform: translateY(-15%) scale(1.1);
+        }
+      }
+    }
+  }
+  .links {
+    hr {
+      width: 80px;
+      height: 5px;
+      background-color: white;
+    }
+    a {
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+
+      &::before {
+        content: " \F12F";
+        font-family: "Bootstrap-Icons";
+        font-size: 1rem;
+        margin-left: 0.5rem;
+        color: white;
+        line-height: 0;
+      }
+      &:hover {
+        color: $orange;
+        transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+        -moz-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        -o-transform: translateX(-10px);
+        &::before {
+          color: $orange;
+        }
+      }
+    }
+  }
+}

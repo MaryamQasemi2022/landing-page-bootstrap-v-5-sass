@@ -1,0 +1,9 @@
+.services {
+  &-title {
+    @include Gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+  }
+}

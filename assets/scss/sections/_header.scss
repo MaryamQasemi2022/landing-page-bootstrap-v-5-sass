@@ -1,0 +1,12 @@
+header {
+  nav {
+    @include Gradient;
+
+    .offcanvas {
+      @media (max-width: 992px) {
+        @include Gradient;
+        color: white;
+      }
+    }
+  }
+}

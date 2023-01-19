@@ -1,0 +1,57 @@
+.portfolio {
+  .portfolio-box > div {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      transition: transform 0.5s ease 0.1s;
+      -webkit-transition: transform 0.5s ease 0.1s;
+      -moz-transition: transform 0.5s ease 0.1s;
+      -ms-transition: transform 0.5s ease 0.1s;
+      -o-transition: transform 0.5s ease 0.1s;
+    }
+    .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba($primary, 0.5);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      -webkit-transition: opacity 0.5s ease;
+      -moz-transition: opacity 0.5s ease;
+      -ms-transition: opacity 0.5s ease;
+      -o-transition: opacity 0.5s ease;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+      }
+      .info {
+        opacity: 1;
+      }
+    }
+  }
+
+  button {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+
+    &.active {
+      color: white;
+      background-color: $primary;
+    }
+  }
+}

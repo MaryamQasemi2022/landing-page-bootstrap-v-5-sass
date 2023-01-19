@@ -1,0 +1,19 @@
+.btn-rounded-primary {
+  background-color: $white;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  border: 0.1rem solid rgba($white, 0.7);
+  transition: color, background-color 0.5s ease-in;
+  -webkit-transition: color, background-color 0.5s ease-in;
+  -moz-transition: color, background-color 0.5s ease-in;
+  -ms-transition: color, background-color 0.5s ease-in;
+  -o-transition: color, background-color 0.5s ease-in;
+
+  &:hover {
+    background-color: darken($primary, 20%);
+    color: $white;
+  }
+}

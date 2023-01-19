@@ -1,0 +1,13 @@
+@mixin Gradient($direction: to left) {
+  background: $secondary; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    $direction,
+    $primary,
+    $secondary
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    $direction,
+    $primary,
+    $secondary
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

@@ -1,0 +1,13 @@
+.comments {
+  @include Gradient;
+  .carousel-card {
+    background-color: #ffdfeb;
+  }
+  .carousel-button {
+    i {
+      line-height: 0;
+      font-style: 1.5rem;
+      font-weight: bold;
+    }
+  }
+}

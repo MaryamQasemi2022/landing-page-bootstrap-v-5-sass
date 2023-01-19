@@ -1,0 +1,19 @@
+{
+  "name": "boot-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch assets/scss:assets/css"
+  },
+  "author": "maryam qasemi",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "sass": "^1.57.1"
+  }
+}
